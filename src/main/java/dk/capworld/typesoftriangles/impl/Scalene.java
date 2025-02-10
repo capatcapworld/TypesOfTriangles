@@ -4,7 +4,7 @@ import dk.capworld.typesoftriangles.Triangle;
 
 public class Scalene implements Triangle {
 
-    private Double[] sideLenght;
+    private Double[] sideLength;
 
     @Override
     public String getName() {
@@ -13,27 +13,27 @@ public class Scalene implements Triangle {
 
     @Override
     public Boolean isThisType() {
-        if (sideLenght.length == 0) {
+        if (sideLength.length == 0) {
             return false;
         }
-        return (!sideLenght[0].equals(sideLenght[1])
-                && !sideLenght[1].equals(sideLenght[2])
-                && !sideLenght[2].equals(sideLenght[0]));
+        return (!sideLength[0].equals(sideLength[1])
+                && !sideLength[1].equals(sideLength[2])
+                && !sideLength[2].equals(sideLength[0]));
     }
 
     @Override
     public void setSideLength(Double[] sideLength) {
-        this.sideLenght = sideLength;
+        this.sideLength = sideLength;
     }
 
     @Override
     public Double[] getSideLength() {
-        return this.sideLenght;
+        return this.sideLength;
     }
 
     @Override
     public Double getArea() {
-        return isocelesArea(sideLenght[0], sideLenght[1], sideLenght[2]);
+        return isocelesArea(sideLength[0], sideLength[1], sideLength[2]);
     }
 
     private Double isocelesArea(Double a, Double b, Double c) {

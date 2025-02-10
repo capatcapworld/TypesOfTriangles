@@ -4,7 +4,7 @@ import dk.capworld.typesoftriangles.Triangle;
 
 public class Equilateral implements Triangle {
 
-    private Double[] sideLenght;
+    private Double[] sideLength;
 
     @Override
     public String getName() {
@@ -13,24 +13,24 @@ public class Equilateral implements Triangle {
 
     @Override
     public Boolean isThisType() {
-        if (sideLenght.length == 0) {
+        if (sideLength.length == 0) {
             return false;
         }
-        return (sideLenght[0].equals(sideLenght[1]) && sideLenght[1].equals(sideLenght[2]));
+        return (sideLength[0].equals(sideLength[1]) && sideLength[1].equals(sideLength[2]));
     }
 
     @Override
     public void setSideLength(Double[] sideLength) {
-        this.sideLenght = sideLength;
+        this.sideLength = sideLength;
     }
 
     @Override
     public Double[] getSideLength() {
-        return this.sideLenght;
+        return this.sideLength;
     }
 
     @Override
     public Double getArea() {
-        return (Math.sqrt(3)/4.0) * this.sideLenght[0] * this.sideLenght[0];
+        return (Math.sqrt(3)/4.0) * this.sideLength[0] * this.sideLength[0];
     }
 }

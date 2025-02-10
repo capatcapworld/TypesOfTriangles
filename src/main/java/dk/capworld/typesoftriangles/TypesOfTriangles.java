@@ -7,7 +7,7 @@ import java.lang.reflect.InvocationTargetException;
 public class TypesOfTriangles {
     public static void main(String[] args) {
         try {
-            new TriangleCalculator().determinTriangleType();
+            new TriangleCalculator().determineTriangleType();
             System.out.println("End program.");
         } catch (TypesOfTrianglesException ex) {
             System.out.println("Error occurred: " + ex.getMessage());

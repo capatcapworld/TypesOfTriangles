@@ -24,7 +24,7 @@ public interface Triangle {
     /**
      * Is the triangle of this specific type.
      *
-     * @return True if has this type else false.
+     * @return True if triangle has this type else false.
      */
     Boolean isThisType();
 

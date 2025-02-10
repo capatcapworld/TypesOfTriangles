@@ -11,7 +11,7 @@ public class TriangleCalculator {
     public TriangleCalculator() {
     };
 
-    public void determinTriangleType() throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
+    public void determineTriangleType() throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
         Double[] triangleSideLengths;
 
         System.out.println("Determine triangle type");
